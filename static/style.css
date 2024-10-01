@@ -146,6 +146,7 @@ header {
 	}
 
 	.fizziks-fallback::before {
+		display: inline;
 		content: 'WARNING: ';
 		color: #ffff33;
 	}
