@@ -1,6 +1,16 @@
+import logging
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,  # Set the log level
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.StreamHandler()
+    ]
+)
 
 
 @app.route('/')
@@ -33,6 +43,12 @@ def fizziks_rigid_body():
 @app.route('/cv')
 def cv():
     return render_template('cv.html', current_page='cv')
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    app.logger.error('404 error: Page not found.')
+    return "Page not found", 404
 
 
 if __name__ == '__main__':
