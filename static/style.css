@@ -102,6 +102,11 @@ header {
 	align-items: center;
 }
 
+.fizziks-fallback,
+.fizziks-fallback::before {
+	display: none;
+}
+
 .pdf-viewer-wrapper {
 	width: 100%;
 	height: 100%;
