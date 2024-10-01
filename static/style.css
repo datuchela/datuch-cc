@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100svh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 6;
+	height: 100%;
+}
+
+.base-layout {
+	height: 100%;
+	display: flex;
+}
+
+.left-side {
+	padding: 0 1rem;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	gap: .025em;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.project-list-item {
+	display: inline-flex;
+	gap: .25em;
+	list-style: disc;
+}
+
+.fizziks-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#iframe-fizziks-rigid-body {
+	width: 100%;
+	height: 100%;
+}
+
+.pdf-viewer-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#pdf-viewer {
+	width: 80%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.base-layout {
+		flex-direction: column;
+	}
+
+	#pdf-viewer {
+		width: 100%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #121212;
+		color: #ffffff;
+	}
+
+	a {
+		color: #4a90e2;
+	}
+}

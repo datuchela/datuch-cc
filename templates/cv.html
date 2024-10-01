@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}CV{% endblock %}
+
+{% block content %}
+<div class="pdf-viewer-wrapper">
+	<object id="pdf-viewer" data="{{ url_for('static', filename='Davit-Narimanidze_CV.pdf') }}"
+		type="application/pdf" width="800" height="600">
+		<p>
+			Couldn't open PDF, but you can still view/download it from
+			<a href="{{ url_for('static', filename='Davit-Narimanidze_CV.pdf') }}">here</a>
+		</p>
+
+	</object>
+</div>
+{% endblock %}
