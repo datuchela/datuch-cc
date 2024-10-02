@@ -1,21 +1,8 @@
-@font-face {
-	font-family: LexendDeca;
-	src: url('/static/LexendDeca-Bold.ttf');
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: LexendDeca;
-	src: url('/static/LexendDeca-Regular.ttf');
-	font-weight: regular;
-}
-
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-
-	font-family: "LexendDeca", sans-serif;
+	font-family: Roboto, sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
