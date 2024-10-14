@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Personal website showcasing my projects, CV, and contact information.">
+		<link rel="icon" type="image/x-icon" href="./static/favicon.ico">
+		<title>fizziks (rigid body) - datuch.cc</title>
+		<link rel="stylesheet" href="./static/style.css">
+	</head>
+
+	<body>
+		<div class="base-layout">
+			<div class="left">
+			<div class="left-top">
+				<header>
+					<a class="logo" href="/" target="_self">datuch.cc</a>
+				</header>
+				<nav aria-label="Main Navigation">
+					<h2>Navigation</h2>
+					<ul>
+
+						<li><a href="/" target="_self">
+							
+							Homepage
+							
+						</a></li>
+						<li class="visually-hidden"><a href="#projects" target="_self">Projects</a></li>
+						<li class="visually-hidden"><a href="#cv" target="_self">CV</a></li>
+						<li class="visually-hidden"><a href="#contact" target="_self">Contact</a></li>
+					</ul>
+				</nav>
+				<section id="projects" aria-labelledby="projects-heading">
+					<h2 id="projects-heading">Projects</h2>
+					<ul>
+						<li>
+							<span class="project-list-item">
+								<a href="/enjhin.html" target="_self">
+
+									
+									enjhin
+									
+								</a>
+								<span>
+									|
+								</span>
+								<a href="https://github.com/datuchela/enjhin"
+									target="_self">(source)</a>
+							</span>
+						</li>
+						<li>
+							<span class="project-list-item">
+								<a href="/fizziks-soft-body.html" target="_self">
+
+									fizziks-soft-body
+								</a>
+								<span>
+									|
+								</span>
+								<a href="https://github.com/datuchela/fizziks-soft-body"
+									target="_self">(source)</a>
+							</span>
+						</li>
+
+						<li>
+							<span class="project-list-item">
+								<a href="/fizziks-rigid-body.html" target="_self">
+
+									
+									<strong>fizziks-rigid-body</strong>
+									
+								</a>
+								<span>
+									|
+								</span>
+								<a href="https://github.com/datuchela/fizziks-rigid-body"
+									target="_self">(source)</a>
+							</span>
+						</li>
+					</ul>
+				</section>
+
+				<section id="cv" aria-labelledby="cv-heading">
+					<h2 id="cv-heading">CV</h2>
+					<ul>
+						<li><a href="/cv.html" aria-label="View CV online" target="_self">
+
+							
+							View CV online
+							
+						</a></li>
+						<li><a href="./static/Davit_Narimanidze_CV.pdf"
+							download aria-label="Download CV in PDF format"
+							target="_self">Download
+							CV</a></li>
+					</ul>
+				</section>
+
+				</div>
+				<div class="left-bottom">
+					<section id="contact" aria-labelledby="contact-heading">
+						<h2 id="contact-heading">Contact</h2>
+						<p>Email: <a href="mailto:davit.narimanidze408@gmail.com"
+							target="_self">davit.narimanidze408@gmail.com</a></p>
+					</section>
+
+					<footer>
+						<p>&copy; 2024 datuch.cc | Davit Narimanidze</p>
+					</footer>
+				</div>
+			</div>
+
+			<main>
+				
+<section class="fizziks-wrapper">
+	<iframe
+		id="iframe-fizziks-rigid-body"
+		class="iframe-fizziks"
+		title="Fizziks Rigid Body"
+		width="1000"
+		height="800"
+		frameborder="0"
+		src="https://fizziks.netlify.app">
+	</iframe>
+	<p class="fizziks-fallback">Your display width is too small to show the demo</p>
+</section>
+
+			</main>
+
+		</div>
+	</body>
+
+</html>
